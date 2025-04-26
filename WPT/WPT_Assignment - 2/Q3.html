@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Remove Dropdown Items</title>
+</head>
+
+<body>
+    <select id="myDropdown">
+        <option value="item1">Item 1</option>
+        <option value="item2">Item 2</option>
+        <option value="item3">Item 3</option>
+    </select>
+    <button onclick="removeItem()">Remove Selected Item</button>
+
+    <script>
+        function removeItem() {
+            let dropdown = document.getElementById("myDropdown");
+            dropdown.remove(dropdown.selectedIndex);
+        }
+    </script>
+</body>
+
+</html>
