@@ -1,0 +1,137 @@
+/* index.css */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap');
+:root {
+  --orange: #FF6B00;
+  --white: #FFFFFF;
+  --navy: #13294B;
+  --yellow: #FFB703;
+  --charcoal: #333333;
+  --gray: #F3F3F3;
+  --primary: var(--orange);
+  --secondary: var(--yellow);
+  --background: var(--white);
+  --alt-bg: var(--gray);
+  --card-bg: var(--white);
+  --card-border: var(--gray);
+  --footer-bg: var(--navy);
+  --footer-text: var(--white);
+  --footer-accent: var(--orange);
+  --title: var(--navy);
+  --body: var(--charcoal);
+  --link: var(--orange);
+  --link-hover: var(--yellow);
+  --icon-active: var(--orange);
+  --icon-inactive: var(--navy);
+  font-family: 'Quicksand', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background);
+  color: var(--body);
+}
+
+body {
+  margin: 0;
+  padding-top: 70px;
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--body);
+  display: flex;
+  flex-direction: column;
+  font-family: 'Quicksand', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#root {
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link);
+  transition: color 0.2s;
+  font-weight: 600;
+}
+a:hover {
+  text-decoration: underline;
+  color: var(--link-hover);
+}
+
+button, .btn-primary {
+  font-family: inherit;
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.6rem 1.6rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 12px rgba(255,107,0,0.08);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+button:hover, .btn-primary:hover {
+  background: var(--yellow);
+  color: var(--charcoal);
+  box-shadow: 0 4px 18px rgba(255,183,3,0.13);
+}
+
+.btn-secondary {
+  background: var(--yellow);
+  color: var(--navy);
+  border: none;
+  border-radius: 1.5rem;
+  font-weight: 700;
+  transition: background 0.2s, color 0.2s;
+}
+.btn-secondary:hover {
+  background: var(--orange);
+  color: var(--white);
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1.5px solid var(--card-border);
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 16px rgba(19,41,75,0.06);
+  color: var(--title);
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+.card-title, h1, h2, h3, h4, h5, h6 {
+  color: var(--title);
+  font-family: 'Quicksand', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+}
+input, textarea, select {
+  border-radius: 0.7rem;
+  border: 1.5px solid var(--gray);
+  background: var(--white);
+  color: var(--charcoal);
+  font-family: inherit;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--orange);
+  box-shadow: 0 0 0 2px var(--yellow);
+}
+.icon {
+  color: var(--icon-inactive);
+  transition: color 0.2s;
+}
+.icon.active {
+  color: var(--icon-active);
+}
+.icon:hover {
+  color: var(--yellow);
+}
+
+/* 
+html, body, #root {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+} */

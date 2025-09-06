@@ -1,0 +1,26 @@
+/* 
+img {
+  background: #e4f5fc; 
+  background: -moz-linear-gradient(
+    left,
+    #e4f5fc 0%,
+    #bfe8f9 21%,
+    #9fd8ef 47%,
+    #2ab0ed 82%
+  ); 
+  background: -webkit-linear-gradient(
+    left,
+    #e4f5fc 0%,
+    #bfe8f9 21%,
+    #9fd8ef 47%,
+    #2ab0ed 82%
+  );
+ background: linear-gradient(
+    to right,
+    #e4f5fc 0%,
+    #bfe8f9 21%,
+    #9fd8ef 47%,
+    #2ab0ed 82%
+  ); 
+}
+ */

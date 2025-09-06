@@ -1,0 +1,27 @@
+/* App.css */
+.card {
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 30px rgba(59,44,59,0.08);
+  background: var(--accent);
+  color: var(--text);
+  border: 2px solid var(--lavender);
+}
+
+.form-control {
+  border-radius: 0.5rem;
+  border: 1.5px solid var(--lavender);
+  background: var(--cream);
+  color: var(--text);
+}
+
+button {
+  border-radius: 0.5rem;
+  background: var(--button);
+  color: var(--text);
+  border: none;
+}
+button:hover {
+  background: var(--accent);
+  color: var(--text);
+}
